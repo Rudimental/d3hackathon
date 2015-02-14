@@ -4,6 +4,7 @@
 // }
 
 console.log(data)
+var tempData = data.response.songs
 
 var container = d3.select(".container");
 
@@ -19,17 +20,17 @@ var y = d3.scale.linear()
 
 container
   .selectAll("div")
-    .data(data)
+    .data(tempData)
   .enter().append("div")
     .style({
-      "width" : function(d) { return d * 100 + "%";},
+      "width" : function(d) { return d.song_hotttnesss * 100 + "%";},
       "margin" : "10px",
       "height" : "25px",
       "font-family" : "Helvetica Nueue,Helvetica,Sans-Sarif",
       "background-color" : "green",
       "padding-top" : "10px"
       })
-    .text(function(d) { return d; });
+    .text(function(d) { return d.artist_name; });
 
 var yAxis = d3.svg.axis()
     .scale(y)
