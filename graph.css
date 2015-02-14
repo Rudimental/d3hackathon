@@ -1,9 +1,24 @@
-.container rect {
-  fill: steelblue;
+html {
+  margin-left: 10px;
+  font: Helvetica;
+  font-family: Helvetica;
 }
 
-.container text {
-  fill: white;
-  font: 10px sans-serif;
-  text-anchor: middle;
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 500;
+  height: 45px;
+  font-weight: bold;
+  background: white;
+}
+
+.space {
+  height: 50px;
+  margin: 2000px;
+}
+
+.container {
+  padding-top: 50px;
+  border-top: 500px;
 }
