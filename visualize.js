@@ -1,7 +1,9 @@
-var data = [];
-for (var i = 0; i < 100; i++) {
-  data.push(Math.random());
-}
+// var data = [];
+// for (var i = 0; i < 100; i++) {
+//   data.push(Math.random());
+// }
+
+console.log(data)
 
 var container = d3.select(".container");
 
@@ -43,3 +45,5 @@ container.append("g")
     .attr("dy", ".71em")
     .style("text-anchor", "end")
     .text("Frequency");
+
+
