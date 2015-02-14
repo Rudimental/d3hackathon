@@ -1,6 +1,6 @@
 //Austin
 
-{  
+var austin = {  
    "response":{  
       "status":{  
          "version":"4.2",

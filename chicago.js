@@ -1,6 +1,6 @@
 //Chicago
 
-{  
+var chicago = {  
    "response":{  
       "status":{  
          "version":"4.2",
