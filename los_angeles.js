@@ -1,5 +1,5 @@
 //Los Angeles
-
+var losangeles =
 {  
    "response":{  
       "status":{  
